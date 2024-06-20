@@ -82,3 +82,33 @@ button {
         transform: rotate(360deg);
     }
 }
+
+.bAnim{
+    height: 200px;
+    animation: buttonAnim 1s 1 linear normal;
+}
+
+.buttonButtonClass{
+    height: 200px;
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+@keyframes buttonAnim {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translate(200%); /* Moves the div to the right offscreen */
+    }
+    51% {
+        transform: translate(-220%); /* Reappears on the left offscreen */
+    }
+    100% {
+        transform: translate(0); /* Stops at its original position */
+    }
+}
+
+.sAnim{
+    
+}
