@@ -1,0 +1,58 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FAF9F6;
+}
+
+.hoverThis {
+    cursor: pointer;
+    margin: 0%;
+}
+
+.hoverThis:hover {
+    color: rgb(94 234 212);
+    cursor: pointer;
+    margin: 0%;
+}
+
+button {
+    border-color: skyblue;
+    border-radius: 15px;
+}
+
+.themeDark{
+    animation: themeChange .2s 1 ease-in normal;
+    background-color: black;
+    color: white
+}
+
+.themeLight{
+    animation: themeChange2 .2s 1 ease-in normal;
+    background-color: white;
+    color: black
+}
+
+@keyframes themeChange {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: black;
+        color: white;
+    }
+}
+
+
+@keyframes themeChange2 {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: white;
+        color: black;
+    }
+}
