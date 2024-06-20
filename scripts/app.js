@@ -1,7 +1,7 @@
 let themeBtn = document.getElementById('themeBtn')
 let body = document.getElementById('bod')
 
-let clickBool = false;
+let clickBool = true;
 
 themeBtn.onclick = () => {
     if (clickBool){
