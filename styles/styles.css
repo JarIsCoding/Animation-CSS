@@ -26,6 +26,12 @@ button {
     border-radius: 15px;
 }
 
+.nav{
+    background-color: rgba( 255, 255, 255, .2);
+}
+
+/* start of theme animation */
+
 .themeDark{
     animation: themeChange .2s 1 ease-in normal;
     background-color: black;
@@ -60,9 +66,9 @@ button {
     }
 }
 
-.nav{
-    background-color: rgba( 255, 255, 255, .2);
-}
+/* end of theme animation */
+
+/* start of spin */
 
 .hAnim{
     background-color: antiquewhite;
@@ -82,6 +88,10 @@ button {
         transform: rotate(360deg);
     }
 }
+
+/* end of spin */
+
+/* start of slide V */
 
 .bAnim{
     height: 200px;
@@ -109,6 +119,54 @@ button {
     }
 }
 
-.sAnim{
-    
+/* end of slide V */
+
+/* start of Sizeup */
+
+.hoverBig{
+    background-color: aliceblue;
+    height: 200px;
 }
+
+.hoverBig:hover{
+    animation: sizeUp .2s 1 linear normal;
+    transform: scale(1.1);
+  }
+  
+  @keyframes sizeUp {
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.1);
+    }
+  }
+
+/* end of Sizeup */
+
+/* start of rgb colors*/
+
+.rainbow_text_animated {
+    height: 200px;
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    color: transparent;
+    animation: rainbow_animation 8s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+/* end of rgb colors*/
+
+/* start of shrink */
+
+
+
+/* end of shrink */
